@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?><Autorization>
+    <admin>
+        <loginA>admin</loginA>
+        <passA>12345</passA>
+    </admin>
+
+    <user>
+        <loginU>user</loginU>
+        <passU>123</passU>
+    </user>
+    <user>
+        <loginU>qwe</loginU>
+        <passU>123</passU>
+    </user>
+    <user>
+        <loginU>dave</loginU>
+        <passU>Superkillbody123</passU>
+    </user>
+</Autorization>

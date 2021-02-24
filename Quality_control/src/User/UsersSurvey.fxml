@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#Esc" prefHeight="628.0" prefWidth="846.0" style="-fx-background-color: #2b6684;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Statistics">
+   <children>
+      <AnchorPane layoutY="71.0" prefHeight="558.0" prefWidth="851.0" style="-fx-background-color: #9cacbf;">
+         <children>
+            <VBox fx:id="Box" layoutX="64.0" layoutY="79.0" prefHeight="435.0" prefWidth="722.0" />
+            <Label layoutX="115.0" layoutY="22.0" text="Данная информация создана, чтобы помочь с вашим выбором">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="344.0" layoutY="17.0" text="Статистика" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fx:id="BackToLogin" fill="WHITE" glyphName="SIGN_OUT" layoutX="810.0" layoutY="43.0" onMouseClicked="#back" size="40" />
+   </children>
+</AnchorPane>

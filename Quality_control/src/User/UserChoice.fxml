@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#Esc" prefHeight="663.0" prefWidth="848.0" style="-fx-background-color: #2b6684;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.User">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="80.0" prefHeight="584.0" prefWidth="848.0" style="-fx-background-color: #aed1cf;">
+         <children>
+            <TableView fx:id="Table" layoutX="1.0" layoutY="-1.0" prefHeight="584.0" prefWidth="848.0">
+              <columns>
+                <TableColumn fx:id="nameProduct" prefWidth="124.00000154972076" text="Название продукта" />
+                <TableColumn fx:id="Price" prefWidth="66.39998626708984" text="Цена, руб." />
+                  <TableColumn fx:id="weight" prefWidth="88.79998779296875" text="Масса нетто, г" />
+                  <TableColumn fx:id="protein" prefWidth="43.199951171875" text="Белки" />
+                  <TableColumn fx:id="fats" prefWidth="45.5999755859375" text="Жиры" />
+                  <TableColumn fx:id="carbohydrates" prefWidth="60.800048828125" text="Углеводы" />
+                  <TableColumn fx:id="nutritionalValue" prefWidth="189.60006713867188" text="Энергетическая ценность, Ккал" />
+                  <TableColumn fx:id="composition" prefWidth="236.79998779296875" text="Состав" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="AddInBasket" layoutX="14.0" layoutY="37.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="198.0" text="Добавить в корзину">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon glyphName="PLUS_CIRCLE" size="20" />
+         </graphic>
+      </Button>
+      <Button fx:id="Basket" layoutX="726.0" layoutY="36.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="119.0" text="Корзина">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon glyphName="DOLLAR" size="20" />
+         </graphic>
+      </Button>
+      <TextField fx:id="Search" layoutX="265.0" layoutY="37.0" opacity="0.87" prefHeight="31.0" prefWidth="197.0" promptText="Поиск">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIcon fill="WHITE" glyphName="SEARCH" layoutX="239.0" layoutY="61.0" size="25" wrappingWidth="25.628536224365234" />
+      <Button fx:id="Statistic" layoutX="506.0" layoutY="37.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="148.0" text="Статистика">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon glyphName="LINE_CHART" size="20" />
+         </graphic>
+      </Button>
+      <FontAwesomeIcon fx:id="BackToLogin" fill="WHITE" glyphName="SIGN_OUT" layoutX="812.0" layoutY="29.0" onMouseClicked="#back" size="33" />
+   </children>
+</AnchorPane>

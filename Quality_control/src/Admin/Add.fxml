@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#Enter" prefHeight="393.0" prefWidth="598.0" style="-fx-background-color: #9cacbf;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AddProduct">
+   <children>
+      <TextField fx:id="Name" layoutX="91.0" layoutY="105.0" prefHeight="38.0" prefWidth="160.0" promptText="Название" />
+      <TextField fx:id="Price" layoutX="91.0" layoutY="167.0" prefHeight="38.0" prefWidth="160.0" promptText="Цена, руб." />
+      <TextField fx:id="weight" layoutX="91.0" layoutY="231.0" prefHeight="38.0" prefWidth="160.0" promptText="Масса нетто, г" />
+      <TextField fx:id="protein" layoutX="91.0" layoutY="285.0" prefHeight="37.0" prefWidth="160.0" promptText="Белки, г" />
+      <TextField fx:id="fats" layoutX="351.0" layoutY="105.0" prefHeight="38.0" prefWidth="160.0" promptText="Жиры, г" />
+      <TextField fx:id="carbohydrates" layoutX="351.0" layoutY="167.0" prefHeight="38.0" prefWidth="160.0" promptText="Углеводы, г" />
+      <TextField fx:id="nutritionalValue" layoutX="351.0" layoutY="231.0" prefHeight="38.0" prefWidth="160.0" promptText="Энергетическая ценность, ккал" />
+      <TextField fx:id="composition" layoutX="351.0" layoutY="285.0" prefHeight="38.0" prefWidth="160.0" promptText="Состав" />
+      <Button fx:id="AddProd" layoutX="207.0" layoutY="336.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="183.0" style="-fx-background-radius: 15; -fx-background-color: linear-gradient(to bottom left, #2b6684 0%, #b9d5fd 100%);" text="Добавить">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="90.0" layoutY="81.0" text="Название продукта">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="143.0" text="Стоимость">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="205.0" text="Масса нетто">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="265.0" text="Белки">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="81.0" text="Жиры">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="143.0" text="Углеводы">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="207.0" text="Энергетическая ценность">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="265.0" text="Состав">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="14.0" text="Добавление товара в реестр">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

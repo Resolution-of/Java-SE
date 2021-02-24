@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onKeyPressed="#Esc" prefHeight="621.0" prefWidth="818.0" style="-fx-background-color: #2b6684;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Admin">
+    <children>
+        <AnchorPane layoutY="63.0" prefHeight="622.0" prefWidth="922.0" style="-fx-background-color: #9cacbf;">
+            <children>
+            <TableView fx:id="Table" layoutY="101.0" prefHeight="522.0" prefWidth="922.0">
+              <columns>
+                <TableColumn fx:id="nameProduct" prefWidth="127.99996644258499" text="Название продукта" />
+                <TableColumn fx:id="price" minWidth="0.0" prefWidth="89.5999755859375" text="Цена, руб." />
+                  <TableColumn fx:id="weight" prefWidth="93.60003662109375" text="Масса нетто, г" />
+                  <TableColumn fx:id="protein" prefWidth="60.79998779296875" text="Белки, г" />
+                  <TableColumn fx:id="fats" prefWidth="58.4000244140625" text="Жиры, г" />
+                  <TableColumn fx:id="carbohydrates" prefWidth="74.4000244140625" text="Углеводы, г" />
+                  <TableColumn fx:id="nutritionalValue" prefWidth="191.19985961914062" text="Энергетическая ценность, ккал" />
+                  <TableColumn fx:id="composition" prefWidth="223.20004882812498" text="Состав" />
+              </columns>
+            </TableView>
+            <Button fx:id="Add" layoutX="53.0" layoutY="33.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="218.0" style="-fx-background-color: #2b6684; -fx-background-radius: 10;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font name="Sylfaen" size="22.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PENCIL" size="30" />
+               </graphic>
+            </Button>
+            <Button fx:id="Delete" layoutX="352.0" layoutY="33.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="218.0" style="-fx-background-color: #2b6684; -fx-background-radius: 10;" text="Удалить" textFill="WHITE">
+               <font>
+                  <Font name="Sylfaen" size="22.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="TRASH" size="30" />
+               </graphic>
+            </Button>
+            <Button fx:id="Red" layoutX="651.0" layoutY="31.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="218.0" style="-fx-background-color: #2b6684; -fx-background-radius: 10;" text="Редактировать" textFill="WHITE">
+               <font>
+                  <Font name="Sylfaen" size="22.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="EDIT" size="30" />
+               </graphic>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="380.0" layoutY="14.0" prefHeight="35.0" prefWidth="162.0" text="Поставщик" textFill="WHITE">
+            <font>
+                <Font name="Century" size="27.0" />
+            </font>
+        </Label>
+      <FontAwesomeIcon fx:id="BackToLogin" fill="WHITE" glyphName="SIGN_OUT" layoutX="876.0" layoutY="42.0" onMouseClicked="#back" size="40" wrappingWidth="31.199951171875">
+         <font>
+            <Font size="15.0" />
+         </font></FontAwesomeIcon>
+    </children>
+</AnchorPane>
